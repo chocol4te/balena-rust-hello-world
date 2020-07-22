@@ -5,4 +5,11 @@ authors = ["Robert Vojta <robert@balena.io>", "Zahari Petkov <zahari@balena.io>"
 edition = "2018"
 
 [dependencies]
-clap = "2"
+hap = { git = "https://github.com/ewilken/hap-rs.git" }
+tokio = {version = "0.2", features = ["full"]}
+pnet = "0.26.0"
+env_logger = "0.7.1"
+
+linux-embedded-hal = { git = "https://github.com/rust-embedded/linux-embedded-hal.git" }
+sgp30 = "0.2.1"
+lazy_static = "1.4.0"
